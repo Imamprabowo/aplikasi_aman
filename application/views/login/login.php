@@ -2,7 +2,7 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>Web Gudang | Login</title>
+  <title>AMAN App | Login</title>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="<?= base_url()?>/assets/fontawesome/css/font-awesome.min.css">
@@ -17,7 +17,7 @@
       body {
   font-family: "Open Sans", sans-serif;
   height: 100vh;
-  background: url("https://i.imgur.com/HgflTDf.jpg") 50% fixed;
+  background: url("https://cdn.idntimes.com/content-images/post/20180311/ombudsman4-bdf1d73d012b42d7d5ee68689b672c9f_600x400.jpg") 50% fixed;
   background-size: cover;
 }
 
@@ -95,7 +95,7 @@
 .login input:focus {
   outline: none;
   color: #444;
-  border-color: #2196F3;
+  border-color: #d13c3c;
   border-left-width: 35px;
 }
 .login input:focus + i.fa {
@@ -105,7 +105,7 @@
 }
 .login a {
   font-size: 0.8em;
-  color: #2196F3;
+  color: #fcdf97;
   text-decoration: none;
 }
 .login .title {
@@ -120,7 +120,7 @@
   width: 100%;
   height: 100%;
   padding: 10px 10px;
-  background: #2196F3;
+  background: #d13c3c;
   color: #fff;
   display: block;
   border: none;
@@ -153,7 +153,7 @@
   box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
 }
 .login:not(.loading) button:hover {
-  box-shadow: 0px 1px 3px #2196F3;
+  box-shadow: 0px 1px 3px #d13c3c;
 }
 .login:not(.loading) button:focus {
   border-bottom-width: 4px;
@@ -182,12 +182,12 @@ footer a, footer a:link {
 <body>
   <div class="wrapper">
   <form action="<?php echo base_url('login/proses_login')?>" class="login" method="post">
-
-    <p class="title"><i class="fa fa-sign-in" aria-hidden="true"></i> Log in</p>
+    <p class="title"><i class="fa fa-sign-in" aria-hidden="true"></i> Aplikasi AMAN</p>
     <?php if($this->session->flashdata('msg')){ ?>
       <div class="alert alert-warning alert-dismissible">
           <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-          <strong>Warning!</strong><br> <?php echo $this->session->flashdata('msg');?>
+          <!-- munculkan pesan jika password / username salah -->
+          <br> <?php echo $this->session->flashdata('msg');?>
      </div>
     <?php } ?>
     <input type="text" name="username" placeholder="Username" autofocus required=""/>
@@ -201,11 +201,9 @@ footer a, footer a:link {
     <?php }else {
       redirect(base_url());
     }?>
-    <?php echo anchor(base_url('login/register'),'Register') ?><br>
-    <!-- <a href="#">Forgot your password?</a> -->
     <button>
       <!-- <i class="spinner"></i> -->
-      <span class="state"><i class="fa fa-sign-in" aria-hidden="true"></i> Log in</span>
+      <span class="state"><i class="fa fa-sign-in" aria-hidden="true"></i> Masuk</span>
     </button>
   </form>
   <!-- <footer><a target="blank" href="http://unsadacoder.or.id">UnsadaCoder.or.id</a></footer> -->

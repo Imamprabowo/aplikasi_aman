@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Web Gudang | User</title>
+    <title>AMAN app | User</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?= base_url()?>/assets/fontawesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?= base_url()?>/assets/simple-sidebar/css/simple-sidebar.css">
@@ -51,10 +51,11 @@
     <nav class="navbar navbar-inverse navbar-fixed-top bg-dark">
       <div class="container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="<?= base_url('user')?>">Web Gudang</a>
+          <a class="navbar-brand" href="<?= base_url('user')?>">AMAN Aplication</a>
         </div>
           <ul class="nav navbar-nav mr-auto">
             <!-- <li><a class="nav-link" href="#">Home</a></li> -->
+            <!-- membuat dropdown tabel barang -->
             <li class="dropdown"><a class="bg-dark dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-database" aria-hidden="true"></i> Tabel <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="<?=base_url('user/tabel_barangmasuk');?>">Tabel Barang Masuk</a></li>
@@ -66,9 +67,8 @@
             <li><a class="nav-link" href="#"><i class="fa fa-address-book" aria-hidden="true"></i> Page 3</a></li> -->
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a class="nav-link">Last Login : <?=$this->session->userdata('last_login')?></a></li>            
-            <li><a class="nav-link" href="<?= base_url('user/setting') ?>"><i class="fa fa-user" aria-hidden="true"></i> Setting</a></li>
-            <li><a class="nav-link" href="<?= base_url('user/signout')?>"><i class="fa fa-sign-out" aria-hidden="true"></i> Sign Out</a></li>
+            <li><a class="nav-link" href="<?= base_url('user/setting') ?>"><i class="fa fa-user" aria-hidden="true"></i> Ubah</a></li>
+            <li><a class="nav-link" href="<?= base_url('user/signout')?>"><i class="fa fa-sign-out" aria-hidden="true"></i> keluar</a></li>
           </ul>
       </div>
     </nav>

@@ -1,19 +1,19 @@
   <br><br>
     <div class="container">
-        <h1 class="judul">Setting</h1>
+        <h1 class="judul">Ubah</h1>
       <div class="row">
         <div class="col-md-3">
             <div class="user-dashboard-sidebar-menu">
               <ul class="list-group">
                   <li class="list-group-item active shadow">
-                    <a class="link_href" href="#">Change Password</a>
+                    <a class="link_href" href="#">Ubah Password</a>
                   </li>
               </ul>
             </div>
         </div>
          <div class="col-md-9">
           <div class="dashboard-content-item">
-            <h4 class="dashboard-title">Change Password</h4>
+            <h4 class="dashboard-title">Ubah Password</h4>
               <hr>
 
               <form action="<?php echo base_url('user/proses_new_password') ?>" method="post">
@@ -26,7 +26,8 @@
                 <?php }else if(validation_errors()) { ?>
                   <div class="alert alert-warning alert-dismissible">
                       <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                      <strong>Warning!</strong><br> <?php echo validation_errors(); ?>
+                      <!-- Message -->
+                      <br> <?php echo validation_errors(); ?>
                  </div>
               <?php  } ?>
 
@@ -38,7 +39,7 @@
                     <input type="username" name="username" class="form-control" disabled="on" value="<?= $this->session->userdata('name')?>">
                 </div><br>
 
-                <label for="password" class="text">New Password</label>
+                <label for="password" class="text">Password Baru</label>
                 <div class="input-group">
                     <span class="input-group-addon">
                       <i class="fa fa fa-key" aria-hidden="true"></i>
@@ -46,7 +47,7 @@
                     <input type="password" name="new_password"  class="form-control" required="">
                 </div><br>
 
-                <label for="confirm_password" class="text">Confirm new password</label>
+                <label for="confirm_password" class="text">Konfirmasi password Baru</label>
                 <div class="input-group">
                     <span class="input-group-addon">
                       <i class="fa fa fa-key" aria-hidden="true"></i>
@@ -61,12 +62,10 @@
                 }?>
 
                 <div class="form-group">
-                  <button type="submit" name="submit" class="form-control btn btn-primary"> <i class="fa fa-send" aria-hidden="true"></i> Update Password</button>
+                  <button type="submit" name="submit" class="form-control btn btn-primary"> <i class="fa fa-send" aria-hidden="true"></i> Simpan Perubahan</button>
                 </div>
               </form>
            </div>
          </div>
        </div>
-         <!-- end page content -->
       </div>
-    <!-- </div> -->

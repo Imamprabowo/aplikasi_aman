@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Web Gudang | Satuan Barang</title>
+  <title>AMAN Gudang | Satuan Barang</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -35,9 +35,9 @@
     <!-- Logo -->
     <a href="<?php echo base_url('admin')?>" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>A</b>LT</span>
+      <span class="logo-mini"><b>ORI</b></span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Admin</b>LTE</span>
+      <span class="logo-lg"><b>AMAN</b>app</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -66,8 +66,7 @@
                 <img src="<?php echo base_url('assets/upload/user/img/'.$a->nama_file)?>" class="img-circle" alt="User Image">
                 <?php } ?>
                 <p>
-                  <?=$this->session->userdata('name')?> - Web Developer
-                  <small>Last Login : <?=$this->session->userdata('last_login')?></small>
+                  <?=$this->session->userdata('name')?>
                 </p>
               </li>
               <!-- Menu Body -->
@@ -78,7 +77,7 @@
                   <a href="<?= base_url('admin/profile')?>" class="btn btn-default btn-flat"><i class="fa fa-cogs" aria-hidden="true"></i> Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="<?= base_url('admin/sigout')?>" class="btn btn-default btn-flat"><i class="fa fa-sign-out" aria-hidden="true"></i> Sign out</a>
+                  <a href="<?= base_url('admin/sigout')?>" class="btn btn-default btn-flat"><i class="fa fa-sign-out" aria-hidden="true"></i> Keluar</a>
                 </div>
               </li>
             </ul>
@@ -113,7 +112,7 @@
         <li class="header">MAIN NAVIGATION</li>
         <li>
           <a href="<?= base_url('admin')?>">
-            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+            <i class="fa fa-dashboard"></i> <span>Beranda</span>
             <span class="pull-right-container">
               <!-- <i class="fa fa-angle-left pull-right"></i> -->
             </span>
@@ -158,7 +157,7 @@
         </li>
         <li class="active">
           <a href="<?php echo base_url('admin/users')?>">
-         <i class="fa fa-fw fa-users" aria-hidden="true"></i> <span>Users</span></a>
+         <i class="fa fa-fw fa-users" aria-hidden="true"></i> <span>Pengguna</span></a>
         </li>
       </ul>
     </section>
@@ -170,7 +169,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Tambah User
+        Tambah Pengguna
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -188,7 +187,7 @@
             <!-- general form elements -->
           <div class="box box-primary" style="width:94%;">
             <div class="box-header with-border">
-              <h3 class="box-title"><i class="fa fa-fw fa-user" aria-hidden="true"></i> Tambah Users Data</h3>
+              <h3 class="box-title"><i class="fa fa-fw fa-user" aria-hidden="true"></i> Tambah Data Pengguna</h3>
             </div>
             <!-- /.box-header -->
             <!-- form start -->
@@ -198,14 +197,14 @@
               <?php if($this->session->flashdata('msg_berhasil')){ ?>
                 <div class="alert alert-success alert-dismissible" style="width:91%">
                     <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                    <strong>Success!</strong><br> <?php echo $this->session->flashdata('msg_berhasil');?>
+                    <br> <?php echo $this->session->flashdata('msg_berhasil');?>
                </div>
               <?php } ?>
 
               <?php if(validation_errors()){ ?>
               <div class="alert alert-warning alert-dismissible">
                   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                  <strong>Warning!</strong><br> <?php echo validation_errors(); ?>
+                  <br> <?php echo validation_errors(); ?>
              </div>
             <?php } ?>
 
@@ -223,15 +222,15 @@
                   <input type="password" name="password" style="width:30%;margin-right: 67px;" class="form-control" id="password" placeholder="Password">
               </div>
                 <div class="form-group" style="display:block;">
-                  <label for="confirm_password" style="width:73%;">Confirm Password</label>
+                  <label for="confirm_password" style="width:73%;">Konfirmasi Password</label>
                   <input type="password" name="confirm_password" style="width:30%;margin-right: 67px;" class="form-control" id="confirm_password" placeholder="Confirm Password">
               </div>
               <div class="form-group" style="display:block;">
                 <label for="role" style="width:73%;">Role</label>
                 <select class="form-control" name="role" style="width:11%;margin-right: 18px;">
                   <option value="0" selected=""></option>
-                  <option value="0">User Biasa</option>
-                  <option value="1">User Admin</option>
+                  <option value="0">Pengguna Biasa</option>
+                  <option value="1">Pengguna Admin</option>
                 </select>
             </div>
               <!-- /.box-body -->
@@ -243,7 +242,7 @@
 
               <div class="box-footer" style="width:93%;">
                 <a type="button" class="btn btn-default" style="width:10%;margin-right:26%" onclick="history.back(-1)" name="btn_kembali"><i class="fa fa-arrow-left" aria-hidden="true"></i> Kembali</a>
-                <a type="button" class="btn btn-info" style="width:13%;margin-right:29%" href="<?=base_url('admin/users')?>" name="btn_listusers"><i class="fa fa-table" aria-hidden="true"></i> Lihat Users</a>
+                <a type="button" class="btn btn-info" style="width:13%;margin-right:29%" href="<?=base_url('admin/users')?>" name="btn_listusers"><i class="fa fa-table" aria-hidden="true"></i> Lihat Pengguna</a>
                 <button type="submit" style="width:20%" class="btn btn-primary"><i class="fa fa-check" aria-hidden="true"></i> Submit</button>
               </div>
             </form>
@@ -284,201 +283,13 @@
   <!-- /.content-wrapper -->
   <footer class="main-footer">
     <div class="pull-right hidden-xs">
-      <b>Version</b> 2.4.0
+      <b>AMAN Version</b> 1.0
     </div>
     <strong>Copyright &copy; <?=date('Y')?></strong>
     
   </footer>
 
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Create the tabs -->
-    <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
-      <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
-      <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
-    </ul>
-    <!-- Tab panes -->
-    <div class="tab-content">
-      <!-- Home tab content -->
-      <div class="tab-pane" id="control-sidebar-home-tab">
-        <h3 class="control-sidebar-heading">Recent Activity</h3>
-        <ul class="control-sidebar-menu">
-          <li>
-            <a href="javascript:void(0)">
-              <i class="menu-icon fa fa-birthday-cake bg-red"></i>
-
-              <div class="menu-info">
-                <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
-
-                <p>Will be 23 on April 24th</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0)">
-              <i class="menu-icon fa fa-user bg-yellow"></i>
-
-              <div class="menu-info">
-                <h4 class="control-sidebar-subheading">Frodo Updated His Profile</h4>
-
-                <p>New phone +1(800)555-1234</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0)">
-              <i class="menu-icon fa fa-envelope-o bg-light-blue"></i>
-
-              <div class="menu-info">
-                <h4 class="control-sidebar-subheading">Nora Joined Mailing List</h4>
-
-                <p>nora@example.com</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0)">
-              <i class="menu-icon fa fa-file-code-o bg-green"></i>
-
-              <div class="menu-info">
-                <h4 class="control-sidebar-subheading">Cron Job 254 Executed</h4>
-
-                <p>Execution time 5 seconds</p>
-              </div>
-            </a>
-          </li>
-        </ul>
-        <!-- /.control-sidebar-menu -->
-
-        <h3 class="control-sidebar-heading">Tasks Progress</h3>
-        <ul class="control-sidebar-menu">
-          <li>
-            <a href="javascript:void(0)">
-              <h4 class="control-sidebar-subheading">
-                Custom Template Design
-                <span class="label label-danger pull-right">70%</span>
-              </h4>
-
-              <div class="progress progress-xxs">
-                <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0)">
-              <h4 class="control-sidebar-subheading">
-                Update Resume
-                <span class="label label-success pull-right">95%</span>
-              </h4>
-
-              <div class="progress progress-xxs">
-                <div class="progress-bar progress-bar-success" style="width: 95%"></div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0)">
-              <h4 class="control-sidebar-subheading">
-                Laravel Integration
-                <span class="label label-warning pull-right">50%</span>
-              </h4>
-
-              <div class="progress progress-xxs">
-                <div class="progress-bar progress-bar-warning" style="width: 50%"></div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0)">
-              <h4 class="control-sidebar-subheading">
-                Back End Framework
-                <span class="label label-primary pull-right">68%</span>
-              </h4>
-
-              <div class="progress progress-xxs">
-                <div class="progress-bar progress-bar-primary" style="width: 68%"></div>
-              </div>
-            </a>
-          </li>
-        </ul>
-        <!-- /.control-sidebar-menu -->
-
-      </div>
-      <!-- /.tab-pane -->
-      <!-- Stats tab content -->
-      <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
-      <!-- /.tab-pane -->
-      <!-- Settings tab content -->
-      <div class="tab-pane" id="control-sidebar-settings-tab">
-        <form method="post">
-          <h3 class="control-sidebar-heading">General Settings</h3>
-
-          <div class="form-group">
-            <label class="control-sidebar-subheading">
-              Report panel usage
-              <input type="checkbox" class="pull-right" checked>
-            </label>
-
-            <p>
-              Some information about this general settings option
-            </p>
-          </div>
-          <!-- /.form-group -->
-
-          <div class="form-group">
-            <label class="control-sidebar-subheading">
-              Allow mail redirect
-              <input type="checkbox" class="pull-right" checked>
-            </label>
-
-            <p>
-              Other sets of options are available
-            </p>
-          </div>
-          <!-- /.form-group -->
-
-          <div class="form-group">
-            <label class="control-sidebar-subheading">
-              Expose author name in posts
-              <input type="checkbox" class="pull-right" checked>
-            </label>
-
-            <p>
-              Allow the user to show his name in blog posts
-            </p>
-          </div>
-          <!-- /.form-group -->
-
-          <h3 class="control-sidebar-heading">Chat Settings</h3>
-
-          <div class="form-group">
-            <label class="control-sidebar-subheading">
-              Show me as online
-              <input type="checkbox" class="pull-right" checked>
-            </label>
-          </div>
-          <!-- /.form-group -->
-
-          <div class="form-group">
-            <label class="control-sidebar-subheading">
-              Turn off notifications
-              <input type="checkbox" class="pull-right">
-            </label>
-          </div>
-          <!-- /.form-group -->
-
-          <div class="form-group">
-            <label class="control-sidebar-subheading">
-              Delete chat history
-              <a href="javascript:void(0)" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
-            </label>
-          </div>
-          <!-- /.form-group -->
-        </form>
-      </div>
-      <!-- /.tab-pane -->
-    </div>
-  </aside>
+  
   <!-- /.control-sidebar -->
   <!-- Add the sidebar's background. This div must be placed
        immediately after the control sidebar -->

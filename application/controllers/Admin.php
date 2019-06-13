@@ -26,9 +26,7 @@ class Admin extends CI_Controller{
     redirect('login');
   }
 
-  ####################################
               // Profile
-  ####################################
 
   public function profile()
   {
@@ -177,7 +175,7 @@ class Admin extends CI_Controller{
     $id = $this->uri->segment(3);
     $where = array('id' => $id);
     $this->M_admin->delete('user',$where);
-    $this->session->set_flashdata('msg_berhasil','User Behasil Di Delete');
+    $this->session->set_flashdata('msg_berhasil','User Behasil Di Hapus');
     redirect(base_url('admin/users'));
 
   }
