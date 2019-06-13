@@ -11,19 +11,18 @@ class Report extends CI_Controller
     $this->load->model('M_admin');
   }
 
-  //bukti barang keluar manual
   public function barangKeluarManual()
   {
 
     $pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
 
     // document informasi
-    $pdf->SetCreator('Aplikasi AMAN');
-    $pdf->SetTitle('Laporan Data Barang');
+    $pdf->SetCreator('Web Aplikasi Gudang');
+    $pdf->SetTitle('Laporan Data Barang Keluar');
     $pdf->SetSubject('Barang Keluar');
 
     //header Data
-    $pdf->SetHeaderData('logo.jpg',30,'Ombudsman Republik Indonesia Perwakilan Provinsi Lampung','Jl. Way Semangka No. 16A Pahoman Bandar Lampung Telpon : (0721) 251373', array(203, 58, 44),array(0, 0, 0));
+    $pdf->SetHeaderData('unsada.jpg',30,'Laporan Data','Barang Keluar',array(203, 58, 44),array(0, 0, 0));
     $pdf->SetFooterData(array(255, 255, 255), array(255, 255, 255));
 
 
@@ -51,9 +50,11 @@ class Report extends CI_Controller
 
     $html=
       '<div>
-        <h1 align="center">Bukti Pengeluaran Barang</h1>
+        <h1 align="center">Invoice Bukti Pengeluaran Barang</h1>
         <p>No Id Transaksi  :</p>
+        <p>Ditunjukan Untuk :</p>
         <p>Tanggal          :</p>
+        <p>Po.Customer      :</p>
 
 
         <table border="1">
@@ -89,16 +90,15 @@ class Report extends CI_Controller
 
         $html .='
             </table>
-            <h6>Mengetahui</h6><br><br><br><br>
+            <h6>Mengetahui</h6><br>
             <h6>Admin</h6>
           </div>';
 
     $pdf->writeHTMLCell(0, 0, '', '', $html, 0, 0, 0, true, '', true);
 
-    $pdf->Output('bukti_keluar_manual.pdf','I');
+    $pdf->Output('contoh_report.pdf','I');
   }
 
-  //bukti barang keluar
   public function barangKeluar()
   {
     $id = $this->uri->segment(3);
@@ -110,13 +110,13 @@ class Report extends CI_Controller
 
     $pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
 
-    // judul
-    $pdf->SetCreator('Aplikasi AMAN');
-    $pdf->SetTitle('Laporan Data Barang');
+    // document informasi
+    $pdf->SetCreator('Web Aplikasi Gudang');
+    $pdf->SetTitle('Laporan Data Barang Keluar');
     $pdf->SetSubject('Barang Keluar');
 
-    // membuat header
-    $pdf->SetHeaderData('logo.jpg',30,'Ombudsman Republik Indonesia Perwakilan Provinsi Lampung','Jl. Way Semangka No. 16A Pahoman Bandar Lampung Telpon : (0721) 251373',array(203, 58, 44),array(0, 0, 0));
+    //header Data
+    $pdf->SetHeaderData('unsada.jpg',30,'Laporan Data','Barang Keluar',array(203, 58, 44),array(0, 0, 0));
     $pdf->SetFooterData(array(255, 255, 255), array(255, 255, 255));
 
 
@@ -144,9 +144,11 @@ class Report extends CI_Controller
 
     $html=
       '<div>
-        <h1 align="center">Bukti Pengeluaran Barang</h1><br>
+        <h1 align="center">Invoice Bukti Pengeluaran Barang</h1><br>
         <p>No Id Transaksi  : '.$id.'</p>
+        <p>Ditunjukan Untuk :</p>
         <p>Tanggal          : '.$tgl1.'/'.$tgl2.'/'.$tgl3.'</p>
+        <p>Po.Customer      :</p>
 
 
         <table border="1">
@@ -187,16 +189,14 @@ class Report extends CI_Controller
 
         $html .='
             </table><br>
-            <h6>Mengetahui</h6><br><br><br><br><br>
-            <h6>Administrasi</h6>
+            <h6>Mengetahui</h6><br><br><br>
+            <h6>Admin</h6>
           </div>';
 
     $pdf->writeHTMLCell(0, 0, '', '', $html, 0, 0, 0, true, '', true);
 
-    $pdf->Output('bukti_keluar.pdf','I');
+    $pdf->Output('invoice_barang_keluar.pdf','I');
 
   }
-
-
 }
 ?>

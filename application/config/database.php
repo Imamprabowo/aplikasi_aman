@@ -75,11 +75,11 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
+	'hostname' => 'mysql:hostname=localhost; dbname=web_gudang; charset=utf8;',
 	'username' => 'root',
 	'password' => '',
-	'database' => 'sql_aman',
-	'dbdriver' => 'mysqli',
+	'database' => '',
+	'dbdriver' => 'pdo',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),

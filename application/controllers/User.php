@@ -78,7 +78,9 @@ class User extends CI_Controller
       redirect(base_url());
   }
 
+  ####################################
         // DATA BARANG MASUK
+  ####################################
 
   public function tabel_barangmasuk()
   {
@@ -89,7 +91,9 @@ class User extends CI_Controller
   }
 
 
+  ####################################
         // DATA BARANG KELUAR
+  ####################################
 
   public function tabel_barangkeluar()
   {

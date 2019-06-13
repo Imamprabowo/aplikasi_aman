@@ -34,7 +34,7 @@ class Login extends CI_Controller {
 		{
 			$cek =  $this->M_login->cek_user('user',$username);
 			if( $cek->num_rows() != 1){
-				$this->session->set_flashdata('msg','Anda Belum Terdaftar, Silahkan Melakukan Register');
+				$this->session->set_flashdata('msg','Username Belum Terdaftar Silahkan Register Dahulu');
 				redirect(base_url());
 			}else {
 
@@ -60,7 +60,7 @@ class Login extends CI_Controller {
 						}
 
 				}else {
-					$this->session->set_flashdata('msg','Maaf, Username Dan Password Salah');
+					$this->session->set_flashdata('msg','Username Dan Password Salah');
 					redirect(base_url());
 				}
 			}
