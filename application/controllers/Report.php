@@ -194,9 +194,7 @@ class Report extends CI_Controller
     $pdf->writeHTMLCell(0, 0, '', '', $html, 0, 0, 0, true, '', true);
 
     $pdf->Output('bukti_keluar.pdf','I');
-
   }
-
 
 }
 ?>
