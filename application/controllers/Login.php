@@ -9,6 +9,7 @@ class Login extends CI_Controller {
 	}
 	public function index()
 	{
+		
 		    $data['token_generate'] = $this->token_generate();
 			$this->session->set_userdata($data);
 			$this->load->view('login/login',$data);
