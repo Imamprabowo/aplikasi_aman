@@ -198,12 +198,12 @@
               <?php if($this->session->flashdata('msg_berhasil')){ ?>
                 <div class="alert alert-success alert-dismissible" style="width:100%">
                     <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                    <strong>Success!</strong><br> <?php echo $this->session->flashdata('msg_berhasil');?>
+                    <br> <?php echo $this->session->flashdata('msg_berhasil');?>
                </div>
               <?php } ?>
-
+              <!-- membuat tombol tambah data keluar -->
               <a href="<?=base_url('admin/tabel_barangmasuk')?>" style="margin-bottom:10px;" type="button" class="btn btn-primary" name="tambah_data"><i class="fa fa-plus-circle" aria-hidden="true"></i> Tambah Data Keluar</a>
-              <a href="<?=base_url('report/barangKeluarManual')?>" style="margin-bottom:10px;" type="button" class="btn btn-danger" name="laporan_data"><i class="fa fa-file-text" aria-hidden="true"></i> Bukti Manual</a>
+
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
@@ -211,12 +211,12 @@
                   <th>ID Transaksi</th>
                   <th>Tanggal Masuk</th>
                   <th>Tanggal Keluar</th>
-                  <th>Lokasi</th>
+                  <th>Penerima</th>
                   <th>Kode Barang</th>
                   <th>Nama Barang</th>
                   <th>Satuan</th>
                   <th>Jumlah</th>
-                  <th>Bukti Keluar</th>
+                  <!-- <th>Bukti Keluar</th> -->
                 </tr>
                 </thead>
                 <tbody>
@@ -233,7 +233,8 @@
                     <td><?=$dd->nama_barang?></td>
                     <td><?=$dd->satuan?></td>
                     <td><?=$dd->jumlah?></td>
-                    <td><a type="button" class="btn btn-danger btn-report"  href="<?=base_url('report/barangKeluar/'.$dd->id_transaksi.'/'.$dd->tanggal_keluar)?>" name="btn_report" style="margin:auto;"><i class="fa fa-file-text" aria-hidden="true"></i></a></td>
+                    <!-- Menampilkan tombol untuk bukti -->
+                    <!-- <td><a type="button" class="btn btn-danger btn-report"  href="<?=base_url('report/barangKeluar/'.$dd->id_transaksi.'/'.$dd->tanggal_keluar)?>" name="btn_report" style="margin:auto;"><i class="fa fa-file-text" aria-hidden="true"></i></a></td> -->
                 </tr>
               <?php $no++; ?>
               <?php endforeach;?>
@@ -247,7 +248,7 @@
                   <th>ID Transaksi</th>
                   <th>Tanggal Masuk</th>
                   <th>Tanggal Keluar</th>
-                  <th>Lokasi</th>
+                  <th>Penerima</th>
                   <th>Kode Barang</th>
                   <th>Nama Barang</th>
                   <th>Satuan</th>

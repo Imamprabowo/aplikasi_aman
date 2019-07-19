@@ -197,7 +197,7 @@
               <?php if($this->session->flashdata('msg_berhasil')){ ?>
                 <div class="alert alert-success alert-dismissible" style="width:91%">
                     <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                    <strong>Success!</strong><br> <?php echo $this->session->flashdata('msg_berhasil');?>
+                    <br> <?php echo $this->session->flashdata('msg_berhasil');?>
                </div>
               <?php } ?>
 
@@ -218,15 +218,27 @@
                   <input type="text" name="tanggal" style="margin-left:66px;width:20%;display:inline;" class="form-control form_datetime" placeholder="Klik Disini">
                 </div>
                 <div class="form-group" style="margin-bottom:40px;">
-                  <label for="nama_barang" style="margin-left:220px;display:inline;">Lokasi</label>
+                  <label for="nama_barang" style="margin-left:220px;display:inline;">Penerima</label>
                   <select class="form-control" name="lokasi" style="margin-left:75px;width:20%;display:inline;">
                     <option value="">-- Pilih --</option>
-                    <option value="Aceh">Jakarta</option>
-                    <option value="Lampung">Lampung</option>
+                    <option value="Bapak Adi">Bapak Adi</option>
+                    <option value="Bapak Hidayat">Bapak Hidayat</option>
+                    <option value="Bapak Eko">Bapak Eko</option>
+                    <option value="Bapak Burhan">Bapak Burhan</option>
+                    <option value="Bapak Alfero">Bapak Alfero</option>
+                    <option value="Bapak Tegar">Bapak Tegar</option>
+                    <option value="Bapak Singgih">Bapak Singgih</option>
+                    <option value="Bapak David">Bapak David</option>
+                    <option value="Bapak Dodik">Bapak Dodik</option>
+                    <option value="Bapak Hardian">Bapak Hardian</option>
+                    <option value="Bapak Tri">Bapak Tri</option>
+                    <option value="Ibu Shintya">Ibu Shintya</option>
+                    <option value="Ibu Atika">Ibu Atika</option>
+                    <option value="Ibu Upi">Ibu Upi</option>
                   </select>
                 </div>
                 <div class="form-group" style="display:inline-block;">
-                  <label for="kode_barang" style="width:87%;margin-left: 12px;">Kode Barang / Barcode</label>
+                  <label for="kode_barang" style="width:87%;margin-left: 12px;">Kode Barang</label>
                   <input type="text" name="kode_barang" style="width: 90%;margin-right: 67px;margin-left: 11px;" class="form-control" id="kode_barang" placeholder="Kode Barang">
                 </div>
                 <div class="form-group" style="display:inline-block;">

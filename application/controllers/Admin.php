@@ -15,7 +15,7 @@ class Admin extends CI_Controller{
       $data['stokBarangMasuk'] = $this->M_admin->sum('tb_barang_masuk','jumlah');
       $data['stokBarangKeluar'] = $this->M_admin->sum('tb_barang_keluar','jumlah');      
       $data['dataUser'] = $this->M_admin->numrows('user');
-      $this->load->view('admin/index',$data);
+      $this->load->view('admin/index',$data); 
     }else {
       $this->load->view('login/login');
     }
@@ -79,12 +79,15 @@ class Admin extends CI_Controller{
     }
   }
 
+
+  // upload gambar
+
   public function proses_gambar_upload()
   {
     $config =  array(
                    'upload_path'     => "./assets/upload/user/img/",
                    'allowed_types'   => "gif|jpg|png|jpeg",
-                   'encrypt_name'    => False, //
+                   'encrypt_name'    => False, 
                    'max_size'        => "50000",  // ukuran file gambar
                    'max_height'      => "9680",
                    'max_width'       => "9024"
@@ -132,15 +135,11 @@ class Admin extends CI_Controller{
       }
   }
 
-  ####################################
            // End Profile
-  ####################################
 
 
 
-  ####################################
-              // Users
-  ####################################
+           // Users
   public function users()
   {
     $data['list_users'] = $this->M_admin->kecuali('user',$this->session->userdata('name'));
@@ -244,16 +243,11 @@ class Admin extends CI_Controller{
     }
   }
 
-
-  ####################################
            // End Users
-  ####################################
 
 
 
-  ####################################
         // DATA BARANG MASUK
-  ####################################
 
   public function form_barangmasuk()
   {
@@ -359,15 +353,11 @@ class Admin extends CI_Controller{
       $this->load->view('admin/form_barangmasuk/form_update');
     }
   }
-  ####################################
       // END DATA BARANG MASUK
-  ####################################
+ 
 
-
-  ####################################
-              // SATUAN
-  ####################################
-
+      // SATUAN
+  
   public function form_satuan()
   {
     $data['avatar'] = $this->M_admin->get_data_gambar('tb_upload_gambar_user',$this->session->userdata('name'));
@@ -448,16 +438,11 @@ class Admin extends CI_Controller{
       $this->load->view('admin/form_satuan/form_update');
     }
   }
+     // END SATUAN
+  
 
-  ####################################
-            // END SATUAN
-  ####################################
-
-
-  ####################################
      // DATA MASUK KE DATA KELUAR
-  ####################################
-
+  
   public function barang_keluar()
   {
     $uri = $this->uri->segment(3);
@@ -501,15 +486,11 @@ class Admin extends CI_Controller{
     }
 
   }
-  ####################################
     // END DATA MASUK KE DATA KELUAR
-  ####################################
+  
 
-
-  ####################################
-        // DATA BARANG KELUAR
-  ####################################
-
+    // DATA BARANG KELUAR
+  
   public function tabel_barangkeluar()
   {
     $data['list_data'] = $this->M_admin->select('tb_barang_keluar');

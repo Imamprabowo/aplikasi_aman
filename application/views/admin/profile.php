@@ -182,21 +182,21 @@
               <?php if($this->session->flashdata('msg_berhasil_gambar')){ ?>
                 <div class="alert alert-success alert-dismissible">
                     <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                    <strong>Success</strong><br> <?php echo $this->session->flashdata('msg_berhasil_gambar');?>
+                    <br> <?php echo $this->session->flashdata('msg_berhasil_gambar');?>
                </div>
               <?php } ?>
 
               <?php if($this->session->flashdata('msg_error_gambar')){ ?>
                 <div class="alert alert-danger alert-dismissible">
                     <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                    <strong>Warning !</strong><br> <?php echo $this->session->flashdata('msg_error_gambar');?>
+                    <br> <?php echo $this->session->flashdata('msg_error_gambar');?>
                </div>
               <?php } ?>
 
               <?php if(isset($pesan_error)){ ?>
               <div class="alert alert-danger alert-dismissible">
                   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                  <strong>Warning!</strong><br> <?php echo $pesan; ?>
+                  <br> <?php echo $pesan; ?>
              </div>
             <?php } ?>
 
@@ -252,14 +252,14 @@
                   <?php if($this->session->flashdata('msg_berhasil')){ ?>
                     <div class="alert alert-success alert-dismissible">
                         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                        <strong>Success</strong><br> <?php echo $this->session->flashdata('msg_berhasil');?>
+                        <br> <?php echo $this->session->flashdata('msg_berhasil');?>
                    </div>
                   <?php } ?>
 
                   <?php if(validation_errors()){ ?>
                   <div class="alert alert-warning alert-dismissible">
                       <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                      <strong>Warning!</strong><br> <?php echo validation_errors(); ?>
+                      <br> <?php echo validation_errors(); ?>
                  </div>
                 <?php } ?>
 

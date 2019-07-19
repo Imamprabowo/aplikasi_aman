@@ -214,7 +214,7 @@
                   <th>No</th>
                   <th>ID_Transaksi</th>
                   <th>Tanggal</th>
-                  <th>Lokasi</th>
+                  <th>Penerima</th>
                   <th>Kode Barang</th>
                   <th>Nama Barang</th>
                   <th>Satuan</th>
@@ -222,7 +222,7 @@
                   <th>Update</th>
                   <th>Delete</th>
                   <th>Keluarkan</th>
-                  <th>Bukti Masuk</th>
+                  <!-- <th>Bukti Masuk</th> -->
                 </tr>
                 </thead>
                 <tbody>
@@ -238,10 +238,14 @@
                     <td><?=$dd->nama_barang?></td>
                     <td><?=$dd->satuan?></td>
                     <td><?=$dd->jumlah?></td>
+                    <!-- Button untuk update/edit barang -->
                     <td><a type="button" class="btn btn-info"  href="<?=base_url('admin/update_barang/'.$dd->id_transaksi)?>" name="btn_update" style="margin:auto;"><i class="fa fa-pencil" aria-hidden="true"></i></a></td>
+                    <!-- Button untuk delete barang -->
                     <td><a type="button" class="btn btn-danger btn-delete"  href="<?=base_url('admin/delete_barang/'.$dd->id_transaksi)?>" name="btn_delete" style="margin:auto;"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+                    <!-- Button untuk mengeluarkan barang -->
                     <td><a type="button" class="btn btn-success btn-barangkeluar"  href="<?=base_url('admin/barang_keluar/'.$dd->id_transaksi)?>" name="btn_barangkeluar" style="margin:auto;"><i class="fa fa-sign-out" aria-hidden="true"></i></a></td>
-                    <td><a type="button" class="btn btn-danger btn-report"  href="<?=base_url('report/barangmasuk/'.$dd->id_transaksi)?>" name="btn_report" style="margin:auto;"><i class="fa fa-file-text" aria-hidden="true"></i></a></td>
+                    <!-- Button untuk bukti barang -->
+                    <!-- <td><a type="button" class="btn btn-danger btn-report"  href="<?=base_url('report/barangmasuk/'.$dd->id_transaksi)?>" name="btn_report" style="margin:auto;"><i class="fa fa-file-text" aria-hidden="true"></i></a></td> -->
                 </tr>
               <?php $no++; ?>
               <?php endforeach;?>
@@ -254,7 +258,7 @@
                   <th>No</th>
                   <th>ID_transaksi</th>
                   <th>Tanggal</th>
-                  <th>Lokasi</th>
+                  <th>Penerima</th>
                   <th>Kode Barang</th>
                   <th>Nama Barang</th>
                   <th>Satuan</th>
@@ -263,16 +267,11 @@
                 </tfoot>
               </table>
             </div>
-            <!-- /.box-body -->
           </div>
 
 
-
-          <!-- /.box -->
         </div>
-        <!-- /.col -->
       </div>
-      <!-- /.row -->
     </section>
     <!-- /.content -->
   </div>
