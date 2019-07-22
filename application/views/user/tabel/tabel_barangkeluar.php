@@ -8,7 +8,7 @@
         <th>ID_Transaksi</th>
         <th>Tanggal Masuk</th>
         <th>Tanggal Keluar</th>
-        <th>Lokasi</th>
+        <th>Penerima</th>
         <th>Kode Barang</th>
         <th>Nama Barang</th>
         <th>Satuan</th>
@@ -24,7 +24,7 @@
           <td><?=$dd->id_transaksi?></td>
           <td><?=$dd->tanggal_masuk?></td>
           <td><?=$dd->tanggal_keluar?></td>
-          <td><?=$dd->lokasi?></td>
+          <td><?=$dd->penerima?></td>
           <td><?=$dd->kode_barang?></td>
           <td><?=$dd->nama_barang?></td>
           <td><?=$dd->satuan?></td>

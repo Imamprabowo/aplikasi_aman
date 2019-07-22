@@ -63,7 +63,7 @@
   top: 40%;
 }
 .login.ok button {
-  background-color: #8bc34a;
+  background-color: #ff8800;
 }
 .login.ok button .spinner {
   border-radius: 0;
@@ -95,7 +95,7 @@
 .login input:focus {
   outline: none;
   color: #444;
-  border-color: #d13c3c;
+  border-color: #ff8800;
   border-left-width: 35px;
 }
 .login input:focus + i.fa {
@@ -105,7 +105,7 @@
 }
 .login a {
   font-size: 0.8em;
-  color: #fcdf97;
+  color: ##ff8800;
   text-decoration: none;
 }
 .login .title {
@@ -120,7 +120,7 @@
   width: 100%;
   height: 100%;
   padding: 10px 10px;
-  background: #d13c3c;
+  background: #ff8800;
   color: #fff;
   display: block;
   border: none;
@@ -153,7 +153,7 @@
   box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
 }
 .login:not(.loading) button:hover {
-  box-shadow: 0px 1px 3px #d13c3c;
+  box-shadow: 0px 1px 3px #ff8800;
 }
 .login:not(.loading) button:focus {
   border-bottom-width: 4px;
