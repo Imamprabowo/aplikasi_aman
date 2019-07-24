@@ -129,7 +129,7 @@
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
-        <li class="header">MAIN NAVIGATION</li>
+        <li class="header bg-blue">MAIN NAVIGATION</li>
 
         <li class="treeview active">
           <a href="<?php echo base_url('admin')?>">
@@ -164,7 +164,7 @@
             <li><a href="<?= base_url('admin/tabel_satuan')?>"><i class="fa fa-circle-o"></i> Tabel Satuan</a></li>
           </ul>
 
-        <li class="header">LABELS</li>
+        <li class="header bg-blue">LABELS</li>
         <li>
           <a href="<?php echo base_url('admin/profile')?>">
          <i class="fa fa-cogs" aria-hidden="true"></i> <span>Profile</span></a>
