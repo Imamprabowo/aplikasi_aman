@@ -209,7 +209,7 @@
               <p>Stok Barang Masuk</p>
             </div>
             <div class="icon">
-              <i class="ion ion-bag"></i>
+              <i class="ion-clipboard"></i>
             </div>
             <a href="<?=base_url('admin/tabel_barangmasuk')?>" class="small-box-footer">Selengkapnya <i class="fa fa-arrow-circle-right"></i></a>
           </div>
@@ -229,7 +229,7 @@
               <p>Stok Barang Keluar</p>
             </div>
             <div class="icon">
-              <i class="ion ion-stats-bars"></i>
+              <i class="ion-social-dropbox"></i>
             </div>
             <a href="<?=base_url('admin/tabel_barangkeluar')?>" class="small-box-footer">Selengkapnya <i class="fa fa-arrow-circle-right"></i></a>
           </div>
@@ -237,7 +237,7 @@
         <!-- ./col -->
         <div class="col-lg-3 col-xs-6">
           <!-- small box -->
-          <div class="small-box bg-yellow">
+          <div class="small-box bg-red">
             <div class="inner">
              <?php if(!empty($dataUser)){ ?>
               <h3><?=$dataUser?></h3>
