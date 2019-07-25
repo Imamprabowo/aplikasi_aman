@@ -128,7 +128,7 @@ y<!DOCTYPE html>
           <a href="#">
             <i class="fa fa-edit"></i> <span>Forms</span>
             <span class="pull-right-container">
-                  <i class="fa fa-angle-left pull-right"></i>
+                  <i class="fa fa-plus"></i>
                 </span>
           </a>
           <ul class="treeview-menu">
@@ -140,7 +140,7 @@ y<!DOCTYPE html>
           <a href="#">
             <i class="fa fa-table"></i> <span>Tables</span>
             <span class="pull-right-container">
-                  <i class="fa fa-angle-left pull-right"></i>
+                  <i class="fa fa-plus"></i>
                 </span>
           </a>
           <ul class="treeview-menu">
