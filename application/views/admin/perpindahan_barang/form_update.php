@@ -29,7 +29,7 @@
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition skin-yellow sidebar-mini">
 <div class="wrapper">
 
   <header class="main-header">
@@ -110,10 +110,10 @@
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
-        <li class="header">MAIN NAVIGATION</li>
+        <li class="header bg-blue">MAIN NAVIGATION</li>
         <li>
           <a href="<?= base_url('admin')?>">
-            <i class="fa fa-dashboard"></i> <span>Beranda</span>
+            <i class="fa fa-archive"></i> <span>Beranda</span>
             <span class="pull-right-container">
               <!-- <i class="fa fa-angle-left pull-right"></i> -->
             </span>
@@ -128,7 +128,7 @@
           <a href="#">
             <i class="fa fa-edit"></i> <span>Forms</span>
             <span class="pull-right-container">
-                  <i class="fa fa-angle-left pull-right"></i>
+                  <i class="fa fa-plus"></i>
                 </span>
           </a>
           <ul class="treeview-menu">
@@ -140,7 +140,7 @@
           <a href="#">
             <i class="fa fa-table"></i> <span>Tables</span>
             <span class="pull-right-container">
-                  <i class="fa fa-angle-left pull-right"></i>
+                  <i class="fa fa-plus"></i>
                 </span>
           </a>
           <ul class="treeview-menu">
@@ -149,7 +149,7 @@
             <li><a href="<?= base_url('admin/tabel_satuan')?>"><i class="fa fa-circle-o"></i> Satuan</a></li>
           </ul>
         </li>
-        <li class="header">LABELS</li>
+        <li class="header bg-blue">LABELS</li>
         <li>
           <a href="<?php echo base_url('admin/profile')?>">
          <i class="fa fa-cogs" aria-hidden="true"></i> <span>Profile</span></a>
@@ -218,20 +218,22 @@
                   <label for="nama_barang" style="margin-left:220px;display:inline;">Penerima</label>
                   <select class="form-control" name="penerima" style="margin-left:75px;width:20%;display:inline;">
                     <option value="">-- Pilih --</option>
-                    <option value="Bapak Adi">Bapak Adi</option>
-                    <option value="Bapak Hidayat">Bapak Hidayat</option>
-                    <option value="Bapak Eko">Bapak Eko</option>
-                    <option value="Bapak Burhan">Bapak Burhan</option>
-                    <option value="Bapak Alfero">Bapak Alfero</option>
-                    <option value="Bapak Tegar">Bapak Tegar</option>
-                    <option value="Bapak Singgih">Bapak Singgih</option>
-                    <option value="Bapak David">Bapak David</option>
-                    <option value="Bapak Dodik">Bapak Dodik</option>
-                    <option value="Bapak Hardian">Bapak Hardian</option>
-                    <option value="Bapak Tri">Bapak Tri</option>
-                    <option value="Ibu Shintya">Ibu Shintya</option>
-                    <option value="Ibu Atika">Ibu Atika</option>
-                    <option value="Ibu Upi">Ibu Upi</option>
+                    <option value="Nur Rakhman Yusuf,S.Sos">Nur Rakhman Yusuf,S.Sos</option>
+                    <option value="Dodik Hermanto,S.H.,M.H.,CLA">Dodik Hermanto,S.H.,M.H.,CLA</option>
+                    <option value="Hardian Ruswan,S.I.P">Hardian Ruswan,S.I.P</option>
+                    <option value="Alfero Setiawan, S.H.,M.H.,CLA">Alfero Setiawan, S.H.,M.H.,CLA</option>
+                    <option value="Upi Fitriyanti, S.P">Upi Fitriyanti, S.P</option>
+                    <option value="Shintya Gugah Asih,S.I.P">Shintya Gugah Asih,S.I.P</option>
+                    <option value="Tegar Adi Wijaya,S.H.,CLA">Tegar Adi Wijaya,S.H.,CLA</option>
+                    <option value="Ahmad Saleh David, S.H.,M.H.">Ahmad Saleh David, S.H.,M.H.</option>
+                    <option value="Atika Mutiara,S.I.P">Atika Mutiara,S.I.P</option>
+                    <option value="Hidayat Pratama, S.H">Hidayat Pratama, S.H/option>
+                    <option value="Muhammad Burhan, S.Pd">Muhammad Burhan, S.Pd</option>
+                    <option value="Singgih Samsuri,S.E">Singgih Samsuri,S.E</option>
+                    <option value="Eko Sutowo,S.E">Eko Sutowo,S.E</option>
+                    <option value="Adi Sunardi">Adi Sunardi</option>
+                    <option value="Agus Firmansyah">Agus Firmansyah</option>
+                    <option value="Tri Sutrisno">Tri Sutrisno</option>
                   </select>
                 </div>
                 <div class="form-group" style="display:inline-block;">
@@ -305,7 +307,7 @@
     <div class="pull-right hidden-xs">
       <b>AMAN Version</b> 1.0
     </div>
-    <strong>Copyright &copy; <?=date('Y')?></strong>
+    <strong>Copyright &copy; <?=date('Y')?><b>Mahasiswa KP Teknik Informatika (ITERA)</b> </strong>
     
   </footer>
 
