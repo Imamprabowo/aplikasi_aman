@@ -187,7 +187,7 @@ y<!DOCTYPE html>
             <!-- general form elements -->
           <div class="box box-primary" style="width:94%;">
             <div class="box-header with-border">
-              <h3 class="box-title"><i class="fa fa-archive" aria-hidden="true"></i> Tambah Data Barang Masuk</h3>
+              <h3 class="box-title"><i class="fa fa-dashboard" aria-hidden="true"></i> Tambah Data Barang Masuk</h3>
             </div>
             <!-- /.box-header -->
             <!-- form start -->
