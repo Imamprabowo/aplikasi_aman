@@ -219,7 +219,7 @@
                 </div>
                 <div class="form-group" style="margin-bottom:40px;">
                   <label for="nama_barang" style="margin-left:220px;display:inline;">Penerima</label>
-                  <select class="form-control" name="lokasi" style="margin-left:75px;width:20%;display:inline;">
+                  <select class="form-control" name="penerima" style="margin-left:75px;width:20%;display:inline;">
                     <option value="">-- Pilih --</option>
                     <option value="Bapak Adi">Bapak Adi</option>
                     <option value="Bapak Hidayat">Bapak Hidayat</option>

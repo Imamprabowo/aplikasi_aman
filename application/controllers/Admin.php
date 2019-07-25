@@ -285,7 +285,7 @@ class Admin extends CI_Controller{
 
   public function proses_databarang_masuk_insert()
   {
-    $this->form_validation->set_rules('lokasi','Lokasi','required');
+    $this->form_validation->set_rules('penerima','Penerima','required');
     $this->form_validation->set_rules('kode_barang','Kode Barang','required');
     $this->form_validation->set_rules('nama_barang','Nama Barang','required');
     $this->form_validation->set_rules('jumlah','Jumlah','required');
@@ -294,7 +294,7 @@ class Admin extends CI_Controller{
     {
       $id_transaksi = $this->input->post('id_transaksi',TRUE);
       $tanggal      = $this->input->post('tanggal',TRUE);
-      $lokasi       = $this->input->post('lokasi',TRUE);
+      $penerima     = $this->input->post('penerima',TRUE);
       $kode_barang  = $this->input->post('kode_barang',TRUE);
       $nama_barang  = $this->input->post('nama_barang',TRUE);
       $satuan       = $this->input->post('satuan',TRUE);
@@ -303,7 +303,7 @@ class Admin extends CI_Controller{
       $data = array(
             'id_transaksi' => $id_transaksi,
             'tanggal'      => $tanggal,
-            'lokasi'       => $lokasi,
+            'penerima'     => $penerima,
             'kode_barang'  => $kode_barang,
             'nama_barang'  => $nama_barang,
             'satuan'       => $satuan,
@@ -321,7 +321,7 @@ class Admin extends CI_Controller{
 
   public function proses_databarang_masuk_update()
   {
-    $this->form_validation->set_rules('lokasi','Lokasi','required');
+    $this->form_validation->set_rules('penerima','Penerima','required');
     $this->form_validation->set_rules('kode_barang','Kode Barang','required');
     $this->form_validation->set_rules('nama_barang','Nama Barang','required');
     $this->form_validation->set_rules('jumlah','Jumlah','required');
@@ -330,7 +330,7 @@ class Admin extends CI_Controller{
     {
       $id_transaksi = $this->input->post('id_transaksi',TRUE);
       $tanggal      = $this->input->post('tanggal',TRUE);
-      $lokasi       = $this->input->post('lokasi',TRUE);
+      $penerima     = $this->input->post('penerima',TRUE);
       $kode_barang  = $this->input->post('kode_barang',TRUE);
       $nama_barang  = $this->input->post('nama_barang',TRUE);
       $satuan       = $this->input->post('satuan',TRUE);
@@ -340,7 +340,7 @@ class Admin extends CI_Controller{
       $data = array(
             'id_transaksi' => $id_transaksi,
             'tanggal'      => $tanggal,
-            'lokasi'       => $lokasi,
+            'penerima'     => $penerima,
             'kode_barang'  => $kode_barang,
             'nama_barang'  => $nama_barang,
             'satuan'       => $satuan,
@@ -461,7 +461,7 @@ class Admin extends CI_Controller{
       $id_transaksi   = $this->input->post('id_transaksi',TRUE);
       $tanggal_masuk  = $this->input->post('tanggal',TRUE);
       $tanggal_keluar = $this->input->post('tanggal_keluar',TRUE);
-      $lokasi         = $this->input->post('lokasi',TRUE);
+      $penerima       = $this->input->post('penerima',TRUE);
       $kode_barang    = $this->input->post('kode_barang',TRUE);
       $nama_barang    = $this->input->post('nama_barang',TRUE);
       $satuan         = $this->input->post('satuan',TRUE);
@@ -472,7 +472,7 @@ class Admin extends CI_Controller{
               'id_transaksi' => $id_transaksi,
               'tanggal_masuk' => $tanggal_masuk,
               'tanggal_keluar' => $tanggal_keluar,
-              'lokasi' => $lokasi,
+              'penerima' => $penerima,
               'kode_barang' => $kode_barang,
               'nama_barang' => $nama_barang,
               'satuan' => $satuan,
