@@ -113,7 +113,7 @@ y<!DOCTYPE html>
         <li class="header bg-blue">MAIN NAVIGATION</li>
         <li>
           <a href="<?= base_url('admin')?>">
-            <i class="fa fa-dashboard"></i> <span>Beranda</span>
+            <i class="fa fa-archive"></i> <span>Beranda</span>
             <span class="pull-right-container">
               <!-- <i class="fa fa-angle-left pull-right"></i> -->
             </span>
@@ -144,9 +144,9 @@ y<!DOCTYPE html>
                 </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?= base_url('admin/tabel_barangmasuk')?>"><i class="fa fa-circle-o"></i> Barang Masuk</a></li>
-            <li><a href="<?= base_url('admin/tabel_barangkeluar')?>"><i class="fa fa-circle-o"></i> Barang Keluar</a></li>
-            <li><a href="<?= base_url('admin/tabel_satuan')?>"><i class="fa fa-circle-o"></i> Satuan</a></li>
+            <li><a href="<?= base_url('admin/tabel_barangmasuk')?>"><i class="fa fa-circle-o"></i> Tabel Barang Masuk</a></li>
+            <li><a href="<?= base_url('admin/tabel_barangkeluar')?>"><i class="fa fa-circle-o"></i> Tabel Barang Keluar</a></li>
+            <li><a href="<?= base_url('admin/tabel_satuan')?>"><i class="fa fa-circle-o"></i> Tabel Satuan</a></li>
           </ul>
         </li>
         <li>
@@ -215,26 +215,28 @@ y<!DOCTYPE html>
                 </div>
                 <div class="form-group">
                   <label for="tanggal" style="margin-left:220px;display:inline;">Tanggal</label>
-                  <input type="text" name="tanggal" style="margin-left:66px;width:20%;display:inline;" class="form-control form_datetime" placeholder="Klik Disini">
+                  <input type="text" name="tanggal" style="margin-left:66px;width:20%;display:inline;" class="form-control form_datetime" placeholder="Tanggal">
                 </div>
                 <div class="form-group" style="margin-bottom:40px;">
                   <label for="nama_barang" style="margin-left:220px;display:inline;">Penerima</label>
                   <select class="form-control" name="penerima" style="margin-left:75px;width:20%;display:inline;">
                     <option value="">-- Pilih --</option>
-                    <option value="Bapak Adi">Bapak Adi</option>
-                    <option value="Bapak Hidayat">Bapak Hidayat</option>
-                    <option value="Bapak Eko">Bapak Eko</option>
-                    <option value="Bapak Burhan">Bapak Burhan</option>
-                    <option value="Bapak Alfero">Bapak Alfero</option>
-                    <option value="Bapak Tegar">Bapak Tegar</option>
-                    <option value="Bapak Singgih">Bapak Singgih</option>
-                    <option value="Bapak David">Bapak David</option>
-                    <option value="Bapak Dodik">Bapak Dodik</option>
-                    <option value="Bapak Hardian">Bapak Hardian</option>
-                    <option value="Bapak Tri">Bapak Tri</option>
-                    <option value="Ibu Shintya">Ibu Shintya</option>
-                    <option value="Ibu Atika">Ibu Atika</option>
-                    <option value="Ibu Upi">Ibu Upi</option>
+                    <option value="Nur Rakhman Yusuf,S.Sos">Nur Rakhman Yusuf,S.Sos</option>
+                    <option value="Dodik Hermanto,S.H.,M.H.,CLA">Dodik Hermanto,S.H.,M.H.,CLA</option>
+                    <option value="Hardian Ruswan,S.I.P">Hardian Ruswan,S.I.P</option>
+                    <option value="Alfero Setiawan, S.H.,M.H.,CLA">Alfero Setiawan, S.H.,M.H.,CLA</option>
+                    <option value="Upi Fitriyanti, S.P">Upi Fitriyanti, S.P</option>
+                    <option value="Shintya Gugah Asih,S.I.P">Shintya Gugah Asih,S.I.P</option>
+                    <option value="Tegar Adi Wijaya,S.H.,CLA">Tegar Adi Wijaya,S.H.,CLA</option>
+                    <option value="Ahmad Saleh David, S.H.,M.H.">Ahmad Saleh David, S.H.,M.H.</option>
+                    <option value="Atika Mutiara,S.I.P">Atika Mutiara,S.I.P</option>
+                    <option value="Hidayat Pratama, S.H">Hidayat Pratama, S.H/option>
+                    <option value="Muhammad Burhan, S.Pd">Muhammad Burhan, S.Pd</option>
+                    <option value="Singgih Samsuri,S.E">Singgih Samsuri,S.E</option>
+                    <option value="Eko Sutowo,S.E">Eko Sutowo,S.E</option>
+                    <option value="Adi Sunardi">Adi Sunardi</option>
+                    <option value="Agus Firmansyah">Agus Firmansyah</option>
+                    <option value="Tri Sutrisno">Tri Sutrisno</option>
                   </select>
                 </div>
                 <div class="form-group" style="display:inline-block;">
@@ -259,13 +261,13 @@ y<!DOCTYPE html>
                 <input type="number" name="jumlah" style="width:41%;margin-left:34px;margin-right:18px;" class="form-control" id="jumlah">
             </div>
             <div class="form-group" style="display:inline-block;">
-              <button type="reset" class="btn btn-basic" name="btn_reset" style="width:95px;margin-left:-70px;"><i class="fa fa-eraser" aria-hidden="true"></i> Reset</button>
+              <button type="reset" class="btn btn-basic bg-red" name="btn_reset" style="width:95px;margin-left:-70px;"><i class="fa fa-eraser" aria-hidden="true"></i> Reset</button>
             </div>
               <!-- /.box-body -->
               <div class="box-footer" style="width:93%;">
                 <a type="button" class="btn btn-default" style="width:10%;margin-right:26%" onclick="history.back(-1)" name="btn_kembali"><i class="fa fa-arrow-left" aria-hidden="true"></i> Kembali</a>
-                <a type="button" class="btn btn-info" style="width:14%;margin-right:29%" href="<?=base_url('admin/tabel_barangmasuk')?>" name="btn_listbarang"><i class="fa fa-table" aria-hidden="true"></i> Lihat List Barang</a>
-                <button type="submit" style="width:20%" class="btn btn-success"><i class="fa fa-check" aria-hidden="true"></i> Simpan</button>
+                <a type="button" class="btn btn-default bg-yellow" style="width:14%;margin-right:29%" href="<?=base_url('admin/tabel_barangmasuk')?>" name="btn_listbarang"><i class="fa fa-table" aria-hidden="true"></i> Lihat List Barang</a>
+                <button type="submit" style="width:20%" class="btn btn-default bg-blue"><i class="fa fa-check" aria-hidden="true"></i> Simpan</button>
               </div>
             </form>
           </div>
@@ -307,7 +309,7 @@ y<!DOCTYPE html>
     <div class="pull-right hidden-xs">
       <b>AMAN Version</b> 1.0
     </div>
-    <strong>Copyright &copy; <?=date('Y')?></strong>
+    <strong>Copyright &copy; <?=date('Y')?> <b>Mahasiswa KP Teknik Informatika (ITERA)</b> </strong>
   </footer>
 
   
