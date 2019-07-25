@@ -33,7 +33,7 @@
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition skin-yellow sidebar-mini">
 <div class="wrapper">
 
   <header class="main-header">
@@ -113,10 +113,10 @@
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
-        <li class="header">MAIN NAVIGATION</li>
+        <li class="header bg-blue">MAIN NAVIGATION</li>
         <li>
           <a href="<?= base_url('admin')?>">
-            <i class="fa fa-dashboard"></i> <span>Beranda</span>
+            <i class="fa fa-archive"></i> <span>Beranda</span>
             <span class="pull-right-container">
               <!-- <i class="fa fa-angle-left pull-right"></i> -->
             </span>
@@ -131,7 +131,7 @@
           <a href="#">
             <i class="fa fa-edit"></i> <span>Forms</span>
             <span class="pull-right-container">
-                  <i class="fa fa-angle-left pull-right"></i>
+                  <i class="fa fa-plus"></i>
                 </span>
           </a>
           <ul class="treeview-menu">
@@ -143,7 +143,7 @@
           <a href="#">
             <i class="fa fa-table"></i> <span>Tables</span>
             <span class="pull-right-container">
-                  <i class="fa fa-angle-left pull-right"></i>
+                  <i class="fa fa-plus"></i>
                 </span>
           </a>
           <ul class="treeview-menu">
@@ -152,7 +152,7 @@
             <li><a href="<?= base_url('admin/tabel_satuan')?>"><i class="fa fa-circle-o"></i> Satuan</a></li>
           </ul>
         </li>
-        <li class="header">LABELS</li>
+        <li class="header bg-blue">LABELS</li>
         <li>
           <a href="<?php echo base_url('admin/profile')?>">
          <i class="fa fa-cogs" aria-hidden="true"></i> <span>Profile</span></a>
@@ -196,18 +196,18 @@
               <?php if($this->session->flashdata('msg_berhasil')){ ?>
                 <div class="alert alert-success alert-dismissible" style="width:100%">
                     <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                    <strong>Success!</strong><br> <?php echo $this->session->flashdata('msg_berhasil');?>
+                    <strong>Sukses!</strong><br> <?php echo $this->session->flashdata('msg_berhasil');?>
                </div>
               <?php } ?>
 
               <?php if($this->session->flashdata('msg_berhasil_keluar')){ ?>
                 <div class="alert alert-success alert-dismissible" style="width:100%">
                     <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                    <strong>Success!</strong><br> <?php echo $this->session->flashdata('msg_berhasil_keluar');?>
+                    <strong>Sukses!</strong><br> <?php echo $this->session->flashdata('msg_berhasil_keluar');?>
                </div>
               <?php } ?>
 
-              <a href="<?=base_url('admin/form_barangmasuk')?>" style="margin-bottom:10px;" type="button" class="btn btn-primary" name="tambah_data"><i class="fa fa-plus-circle" aria-hidden="true"></i> Tambah Data Masuk</a>
+              <a href="<?=base_url('admin/form_barangmasuk')?>" style="margin-bottom:10px;" type="button" class="btn btn-primary bg-yellow" name="tambah_data"><i class="fa fa-plus-circle" aria-hidden="true"></i> Tambah Data Masuk</a>
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
@@ -280,7 +280,7 @@
     <div class="pull-right hidden-xs">
       <b>AMAN Version</b> 1.0
     </div>
-    <strong>Copyright &copy; <?=date('Y')?></strong>
+    <strong>Copyright &copy; <?=date('Y')?><b>Mahasiswa KP Teknik Informatika (ITERA)</b></strong>
     
   </footer>
 
