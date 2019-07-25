@@ -96,10 +96,10 @@
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
-        <li class="header">MAIN NAVIGATION</li>
+        <li class="header bg-blue">MAIN NAVIGATION</li>
         <li>
           <a href="<?= base_url('admin')?>">
-            <i class="fa fa-dashboard"></i> <span>Beranda</span>
+            <i class="fa fa-archive"></i> <span>Beranda</span>
             <span class="pull-right-container">
               <!-- <i class="fa fa-angle-left pull-right"></i> -->
             </span>
@@ -114,7 +114,7 @@
           <a href="#">
             <i class="fa fa-edit"></i> <span>Forms</span>
             <span class="pull-right-container">
-                  <i class="fa fa-angle-left pull-right"></i>
+                  <i class="fa fa-plus"></i>
                 </span>
           </a>
           <ul class="treeview-menu">
@@ -126,7 +126,7 @@
           <a href="#">
             <i class="fa fa-table"></i> <span>Tables</span>
             <span class="pull-right-container">
-                  <i class="fa fa-angle-left pull-right"></i>
+                  <i class="fa fa-plus"></i>
                 </span>
           </a>
           <ul class="treeview-menu">
@@ -135,7 +135,7 @@
             <li><a href="<?= base_url('admin/tabel_satuan')?>"><i class="fa fa-circle-o"></i> Tabel Satuan</a></li>
           </ul>
         </li>
-        <li class="header">LABELS</li>
+        <li class="header bg-blue">LABELS</li>
         <li class="active">
           <a href="<?php echo base_url('admin/profile')?>">
          <i class="fa fa-cogs" aria-hidden="true"></i> <span>Profile</span></a>
@@ -213,8 +213,8 @@
         <div class="col-md-9">
           <div class="nav-tabs-custom">
             <ul class="nav nav-tabs">
-              <li class="active"><a href="#settings" data-toggle="tab">Change Password</a></li>
-              <li><a href="#picture" data-toggle="tab">Change Picture</a></li>
+              <li class="active"><a href="#settings" data-toggle="tab">Ubah Password</a></li>
+              <li><a href="#picture" data-toggle="tab">Ubah Foto</a></li>
             </ul>
             <div class="tab-content">
 
@@ -240,7 +240,7 @@
 
                   <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
-                      <button type="submit" class="btn btn-success"><i class="fa fa-send" aria-hidden="true"></i>&nbsp;Submit</button>
+                      <button type="submit" class="btn btn-basic bg-blue"><i class="fa fa-send" aria-hidden="true"></i>&nbsp;Submit</button>
                     </div>
                   </div>
                 </form>
@@ -299,7 +299,7 @@
 
                   <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
-                      <button type="submit" class="btn btn-success"><i class="fa fa-send" aria-hidden="true"></i>&nbsp;Submit</button>
+                      <button type="submit" class="btn btn-success bg-blue"><i class="fa fa-send" aria-hidden="true"></i>&nbsp;Submit</button>
                     </div>
                   </div>
                 </form>
@@ -322,7 +322,7 @@
     <div class="pull-right hidden-xs">
       <b>AMAN Version</b> 1.0
     </div>
-    <strong>Copyright &copy; <?=date('Y')?></strong>
+    <strong>Copyright &copy; <?=date('Y')?> <b>Mahasiswa KP Teknik Informatika (ITERA)</b> </strong>
     
   </footer>
 
