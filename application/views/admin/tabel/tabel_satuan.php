@@ -147,9 +147,9 @@
                 </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?= base_url('admin/tabel_barangmasuk')?>"><i class="fa fa-circle-o"></i> Tabel Barang Masuk</a></li>
-            <li><a href="<?= base_url('admin/tabel_barangkeluar')?>"><i class="fa fa-circle-o"></i> Tabel Barang Keluar</a></li>
-            <li class="active"><a href="<?= base_url('admin/tabel_satuan')?>"><i class="fa fa-circle-o"></i> Tabel Satuan</a></li>
+            <li><a href="<?= base_url('admin/tabel_barangmasuk')?>"><i class="fa fa-circle-o"></i> Barang Masuk</a></li>
+            <li><a href="<?= base_url('admin/tabel_barangkeluar')?>"><i class="fa fa-circle-o"></i> Barang Keluar</a></li>
+            <li class="active"><a href="<?= base_url('admin/tabel_satuan')?>"><i class="fa fa-circle-o"></i> Satuan</a></li>
           </ul>
         </li>
         <li>
@@ -172,12 +172,12 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Tabel Satuan
+        Satuan
       </h1>
       <ol class="breadcrumb">
         <li><a href="<?=base_url('admin')?>"><i class="fa fa-dashboard"></i> Home</a></li>
         <li>Tables</li>
-        <li class="active"><a href="<?=base_url('admin/tabel_satuan')?>">Tabel Satuan</a></li>
+        <li class="active"><a href="<?=base_url('admin/tabel_satuan')?>">Satuan</a></li>
       </ol>
     </section>
 

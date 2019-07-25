@@ -58,8 +58,8 @@
             <!-- membuat dropdown tabel barang -->
             <li class="dropdown"><a class="bg-dark dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-database" aria-hidden="true"></i> Tabel <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="<?=base_url('user/tabel_barangmasuk');?>">Tabel Barang Masuk</a></li>
-                <li><a href="<?=base_url('user/tabel_barangkeluar');?>">Tabel Barang Keluar</a></li>
+                <li><a href="<?=base_url('user/tabel_barangmasuk');?>">Barang Masuk</a></li>
+                <li><a href="<?=base_url('user/tabel_barangkeluar');?>">Barang Keluar</a></li>
                   <!-- <li><a href="#">Tabel Gudang 3</a></li> -->
               </ul>
             </li>

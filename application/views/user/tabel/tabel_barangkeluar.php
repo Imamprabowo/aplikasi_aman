@@ -1,6 +1,6 @@
 <br><br><br>
     <div class="container text-center" style="margin: 2em auto;">
-    <h2 class="tex-center">Tabel Barang Keluar</h2>
+    <h2 class="tex-center">Barang Keluar</h2>
     <table class="table table-bordered table-striped" style="margin: 2em auto;" id="tabel_barangkeluar">
     <thead>
       <tr>
