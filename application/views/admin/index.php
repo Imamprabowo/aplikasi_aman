@@ -266,7 +266,7 @@
     <div class="pull-right hidden-xs">
       <b>AMAN Version</b> 1.0
     </div>
-    <strong>Copyright &copy; <?=date('Y')?></strong>
+    <strong>Copyright &copy; <?=date('Y')?> <b>Mahasiswa KP Teknik Informatika (ITERA)</b> </strong>
   </footer>
 
 
