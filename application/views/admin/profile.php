@@ -20,7 +20,7 @@
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition skin-yellow sidebar-mini">
 <div class="wrapper">
 
   <header class="main-header">
@@ -142,7 +142,7 @@
         </li>
         <li>
           <a href="<?php echo base_url('admin/users')?>">
-         <i class="fa fa-fw fa-users" aria-hidden="true"></i> <span>Pengguna</span></a>
+         <i class="fa fa-fw fa-users" aria-hidden="true"></i> <span>Users</span></a>
         </li>
       </ul>
 
@@ -177,7 +177,7 @@
               <?php } ?>
               <h3 class="profile-username text-center"><?=$this->session->userdata('name')?></h3>
 
-              <p class="text-muted text-center">Software Engineer</p><br>
+              <p class="text-muted text-center">Ombudsman R.I PWK Lampung</p><br>
 
               <?php if($this->session->flashdata('msg_berhasil_gambar')){ ?>
                 <div class="alert alert-success alert-dismissible">
@@ -278,14 +278,14 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="new_password" class="col-sm-2 control-label">Password Baru</label>
+                    <label for="new_password" class="col-sm-2 control-label">New Password</label>
 
                     <div class="col-sm-10">
                       <input type="password" name="new_password" class="form-control" id="new_password" placeholder="New Password">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="confirm_new_password" class="col-sm-2 control-label">Konfirmasi Password Baru</label>
+                    <label for="confirm_new_password" class="col-sm-2 control-label">Confirm New Password</label>
 
                     <div class="col-sm-10">
                       <input type="password" name="confirm_new_password" class="form-control" id="confirm_new_password" placeholder="Confirm New Password">
@@ -299,7 +299,7 @@
 
                   <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
-                      <button type="submit" class="btn btn-success bg-blue"><i class="fa fa-send" aria-hidden="true"></i>&nbsp;Simpan</button>
+                      <button type="submit" class="btn btn-success bg-blue"><i class="fa fa-send" aria-hidden="true"></i>&nbsp;Submit</button>
                     </div>
                   </div>
                 </form>
