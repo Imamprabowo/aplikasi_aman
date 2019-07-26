@@ -142,7 +142,7 @@
         </li>
         <li>
           <a href="<?php echo base_url('admin/users')?>">
-         <i class="fa fa-fw fa-users" aria-hidden="true"></i> <span>Users</span></a>
+         <i class="fa fa-fw fa-users" aria-hidden="true"></i> <span>Pengguna</span></a>
         </li>
       </ul>
 
@@ -278,14 +278,14 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="new_password" class="col-sm-2 control-label">New Password</label>
+                    <label for="new_password" class="col-sm-2 control-label">Password Baru</label>
 
                     <div class="col-sm-10">
                       <input type="password" name="new_password" class="form-control" id="new_password" placeholder="New Password">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="confirm_new_password" class="col-sm-2 control-label">Confirm New Password</label>
+                    <label for="confirm_new_password" class="col-sm-2 control-label">Konfirmasi Password Baru</label>
 
                     <div class="col-sm-10">
                       <input type="password" name="confirm_new_password" class="form-control" id="confirm_new_password" placeholder="Confirm New Password">
@@ -299,7 +299,7 @@
 
                   <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
-                      <button type="submit" class="btn btn-success bg-blue"><i class="fa fa-send" aria-hidden="true"></i>&nbsp;Submit</button>
+                      <button type="submit" class="btn btn-success bg-blue"><i class="fa fa-send" aria-hidden="true"></i>&nbsp;Simpan</button>
                     </div>
                   </div>
                 </form>
