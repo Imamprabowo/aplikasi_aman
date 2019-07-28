@@ -1,19 +1,12 @@
   <br><br>
     <div class="container">
-        <h1 class="judul">Ubah</h1>
+        <h1 class="judul">Ubah Password</h1>
       <div class="row">
-        <div class="col-md-3">
-            <div class="user-dashboard-sidebar-menu">
-              <ul class="list-group">
-                  <li class="list-group-item active shadow">
-                    <a class="link_href" href="#">Ubah Password</a>
-                  </li>
-              </ul>
-            </div>
+        <div class="col-md-2">
+           
         </div>
          <div class="col-md-9">
           <div class="dashboard-content-item">
-            <h4 class="dashboard-title">Ubah Password</h4>
               <hr>
 
               <form action="<?php echo base_url('user/proses_new_password') ?>" method="post">
