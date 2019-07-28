@@ -133,7 +133,7 @@
 
         <li class="treeview active">
           <a href="<?php echo base_url('admin')?>">
-            <i class="fa fa-dashboard"></i> <span>Beranda</span>
+            <i class="fa fa-archive"></i> <span>Beranda</span>
             <span class="pull-right-container">
               <!-- <i class="fa fa-angle-left pull-right"></i> -->
             </span>
