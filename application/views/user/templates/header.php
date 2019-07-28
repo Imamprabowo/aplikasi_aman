@@ -16,7 +16,7 @@
 
     <style>
       .bg-dark{
-        background-color: #343a40!important;
+        background-color: #f78502!important;
       }
       .nav-link{
         color: rgba(255,255,255,.5);
@@ -48,7 +48,7 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top bg-dark">
+    <nav class="navbar navbar-fixed-top bg-dark">
       <div class="container">
         <div class="navbar-header">
           <a class="navbar-brand" href="<?= base_url('user')?>">AMAN Aplication</a>
@@ -66,9 +66,9 @@
             <!-- <li><a class="nav-link" href="#"><i class="fa fa-book" aria-hidden="true"></i> Page 2</a></li>
             <li><a class="nav-link" href="#"><i class="fa fa-address-book" aria-hidden="true"></i> Page 3</a></li> -->
           </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a class="nav-link" href="<?= base_url('user/setting') ?>"><i class="fa fa-user" aria-hidden="true"></i> Ubah</a></li>
-            <li><a class="nav-link" href="<?= base_url('user/signout')?>"><i class="fa fa-sign-out" aria-hidden="true"></i> keluar</a></li>
+          <ul class="nav navbar-nav navbar-right bg-dark">
+            <li><a class="nav-link bg-dark" style="color: white;" href="<?= base_url('user/setting') ?>"><i class="fa fa-user" aria-hidden="true"></i> Ubah</a></li>
+            <li><a class="nav-link bg-dark" style="color: white;" href="<?= base_url('user/signout')?>"><i class="fa fa-sign-out" aria-hidden="true"></i> keluar</a></li>
           </ul>
       </div>
     </nav>
