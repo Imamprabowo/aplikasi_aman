@@ -17,6 +17,7 @@
     <style>
       .bg-dark{
         background-color: #f78502 !important;
+        color: white;
       }
       .nav-link{
         color: rgba(255,255,255,.5);
