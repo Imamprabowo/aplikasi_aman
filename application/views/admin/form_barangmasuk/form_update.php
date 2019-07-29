@@ -17,6 +17,8 @@
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="<?php echo base_url()?>assets/web_admin/dist/css/skins/_all-skins.min.css">
+  
+  <link rel="stylesheet" href="<?php echo base_url()?>assets/datetimepicker/css/bootstrap-datetimepicker.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -199,7 +201,12 @@
                   <strong>Warning!</strong><br> <?php echo validation_errors(); ?>
              </div>
             <?php } ?>
-
+              <?php if($this->session->flashdata('msg_gagal')){ ?>
+                <div class="alert alert-success alert-dismissible" style="width:100%">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    <strong>Sukses!</strong><br> <?php echo $this->session->flashdata('msg_gagal');?>
+               </div>
+              <?php } ?>
               <div class="box-body">
                 <div class="form-group">
                   <?php foreach($data_barang_update as $d){ ?>
@@ -213,7 +220,7 @@
                 <div class="form-group" style="margin-bottom:40px;">
                   <label for="nama_barang" style="margin-left:220px;display:inline;">Penerima</label>
                   <select class="form-control" name="penerima" style="margin-left:75px;width:20%;display:inline;">
-                    <option value="">-- Pilih --</option>
+                    <option value="0">-- Pilih --</option>
                     <option value="Nur Rakhman Yusuf,S.Sos">Nur Rakhman Yusuf,S.Sos</option>
                     <option value="Dodik Hermanto,S.H.,M.H.,CLA">Dodik Hermanto,S.H.,M.H.,CLA</option>
                     <option value="Hardian Ruswan,S.I.P">Hardian Ruswan,S.I.P</option>
@@ -223,7 +230,7 @@
                     <option value="Tegar Adi Wijaya,S.H.,CLA">Tegar Adi Wijaya,S.H.,CLA</option>
                     <option value="Ahmad Saleh David, S.H.,M.H.">Ahmad Saleh David, S.H.,M.H.</option>
                     <option value="Atika Mutiara,S.I.P">Atika Mutiara,S.I.P</option>
-                    <option value="Hidayat Pratama, S.H">Hidayat Pratama, S.H/option>
+                    <option value="Hidayat Pratama, S.H">Hidayat Pratama, S.H</option>
                     <option value="Muhammad Burhan, S.Pd">Muhammad Burhan, S.Pd</option>
                     <option value="Singgih Samsuri,S.E">Singgih Samsuri,S.E</option>
                     <option value="Eko Sutowo,S.E">Eko Sutowo,S.E</option>

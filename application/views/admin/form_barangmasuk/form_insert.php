@@ -1,4 +1,4 @@
-y<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -17,7 +17,9 @@ y<!DOCTYPE html>
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="<?php echo base_url()?>assets/web_admin/dist/css/skins/_all-skins.min.css">
+
   <link rel="stylesheet" href="<?php echo base_url()?>assets/datetimepicker/css/bootstrap-datetimepicker.css">
+ 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -65,7 +67,6 @@ y<!DOCTYPE html>
                 <?php foreach($avatar as $a){ ?>
                 <img src="<?php echo base_url('assets/upload/user/img/'.$a->nama_file)?>" class="img-circle" alt="User Image">
                 <?php } ?>
-
                 <p>
                   <?=$this->session->userdata('name')?>
                 </p>
@@ -144,9 +145,9 @@ y<!DOCTYPE html>
                 </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?= base_url('admin/tabel_barangmasuk')?>"><i class="fa fa-circle-o"></i> Tabel Barang Masuk</a></li>
-            <li><a href="<?= base_url('admin/tabel_barangkeluar')?>"><i class="fa fa-circle-o"></i> Tabel Barang Keluar</a></li>
-            <li><a href="<?= base_url('admin/tabel_satuan')?>"><i class="fa fa-circle-o"></i> Tabel Satuan</a></li>
+            <li><a href="<?= base_url('admin/tabel_barangmasuk')?>"><i class="fa fa-circle-o"></i> Barang Masuk</a></li>
+            <li><a href="<?= base_url('admin/tabel_barangkeluar')?>"><i class="fa fa-circle-o"></i> Barang Keluar</a></li>
+            <li><a href="<?= base_url('admin/tabel_satuan')?>"><i class="fa fa-circle-o"></i> Satuan</a></li>
           </ul>
         </li>
         <li>
@@ -220,7 +221,7 @@ y<!DOCTYPE html>
                 <div class="form-group" style="margin-bottom:40px;">
                   <label for="nama_barang" style="margin-left:220px;display:inline;">Penerima</label>
                   <select class="form-control" name="penerima" style="margin-left:75px;width:20%;display:inline;">
-                    <option value="">-- Pilih --</option>
+                    <option value="0">-- Pilih --</option>
                     <option value="Nur Rakhman Yusuf,S.Sos">Nur Rakhman Yusuf,S.Sos</option>
                     <option value="Dodik Hermanto,S.H.,M.H.,CLA">Dodik Hermanto,S.H.,M.H.,CLA</option>
                     <option value="Hardian Ruswan,S.I.P">Hardian Ruswan,S.I.P</option>
@@ -230,7 +231,7 @@ y<!DOCTYPE html>
                     <option value="Tegar Adi Wijaya,S.H.,CLA">Tegar Adi Wijaya,S.H.,CLA</option>
                     <option value="Ahmad Saleh David, S.H.,M.H.">Ahmad Saleh David, S.H.,M.H.</option>
                     <option value="Atika Mutiara,S.I.P">Atika Mutiara,S.I.P</option>
-                    <option value="Hidayat Pratama, S.H">Hidayat Pratama, S.H/option>
+                    <option value="Hidayat Pratama, S.H">Hidayat Pratama, S.H</option>
                     <option value="Muhammad Burhan, S.Pd">Muhammad Burhan, S.Pd</option>
                     <option value="Singgih Samsuri,S.E">Singgih Samsuri,S.E</option>
                     <option value="Eko Sutowo,S.E">Eko Sutowo,S.E</option>

@@ -227,7 +227,7 @@
                     <option value="Tegar Adi Wijaya,S.H.,CLA">Tegar Adi Wijaya,S.H.,CLA</option>
                     <option value="Ahmad Saleh David, S.H.,M.H.">Ahmad Saleh David, S.H.,M.H.</option>
                     <option value="Atika Mutiara,S.I.P">Atika Mutiara,S.I.P</option>
-                    <option value="Hidayat Pratama, S.H">Hidayat Pratama, S.H/option>
+                    <option value="Hidayat Pratama, S.H">Hidayat Pratama, S.H</option>
                     <option value="Muhammad Burhan, S.Pd">Muhammad Burhan, S.Pd</option>
                     <option value="Singgih Samsuri,S.E">Singgih Samsuri,S.E</option>
                     <option value="Eko Sutowo,S.E">Eko Sutowo,S.E</option>

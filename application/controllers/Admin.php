@@ -315,7 +315,7 @@ class Admin extends CI_Controller{
       redirect(base_url('admin/form_barangmasuk'));
     }else {
       $data['list_satuan'] = $this->M_admin->select('tb_satuan');
-      $this->load->view('admin/form_barangmasuk/form_insert',$data);
+      $this->load->view('admin/form_barangmasuk/form_insert');
     }
   }
 
@@ -350,6 +350,7 @@ class Admin extends CI_Controller{
       $this->session->set_flashdata('msg_berhasil','Data Barang Berhasil Diupdate');
       redirect(base_url('admin/tabel_barangmasuk'));
     }else{
+      $data['list_satuan'] = $this->M_admin->select('tb_satuan');
       $this->load->view('admin/form_barangmasuk/form_update');
     }
   }
