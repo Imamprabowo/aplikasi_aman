@@ -5,8 +5,8 @@ class Admin extends CI_Controller{
 
   public function __construct(){
 		parent::__construct();
+    $this->load->helper('url_helper');
     $this->load->model('M_admin');
-    $this->load->library('upload');
 	}
 
   public function index(){
@@ -290,6 +290,7 @@ class Admin extends CI_Controller{
     $this->form_validation->set_rules('nama_barang','Nama Barang','required');
     $this->form_validation->set_rules('jumlah','Jumlah','required');
 
+    
     if($this->form_validation->run() == TRUE)
     {
       $id_transaksi = $this->input->post('id_transaksi',TRUE);
@@ -307,7 +308,8 @@ class Admin extends CI_Controller{
             'kode_barang'  => $kode_barang,
             'nama_barang'  => $nama_barang,
             'satuan'       => $satuan,
-            'jumlah'       => $jumlah
+            'jumlah'       => $jumlah,
+            'gambar'       => $gambar
       );
       $this->M_admin->insert('tb_barang_masuk',$data);
 

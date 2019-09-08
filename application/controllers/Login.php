@@ -19,10 +19,6 @@ class Login extends CI_Controller {
 		return $tokens = md5(uniqid(rand(), true));
 	}
 
-	public function register(){
-		$this->load->view('login/register');
-	}
-
 	public function proses_login(){
 		$this->form_validation->set_rules('username','Username','required');
 		$this->form_validation->set_rules('password','Password','required');
@@ -35,7 +31,7 @@ class Login extends CI_Controller {
 		{
 			$cek =  $this->M_login->cek_user('user',$username);
 			if( $cek->num_rows() != 1){
-				$this->session->set_flashdata('msg','Anda Belum Terdaftar, Silahkan Melakukan Register');
+				$this->session->set_flashdata('msg','Anda Belum Terdaftar');
 				redirect(base_url());
 			}else {
 

@@ -152,7 +152,7 @@
         <li class="header bg-blue">LABELS</li>
         <li>
           <a href="<?php echo base_url('admin/profile')?>">
-         <i class="fa fa-cogs" aria-hidden="true"></i> <span>Profile</span></a>
+         <i class="fa fa-cogs" aria-hidden="true"></i><span>Profile</span></a>
         </li>
         <li>
           <a href="<?php echo base_url('admin/users')?>">
