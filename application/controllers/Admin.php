@@ -308,8 +308,7 @@ class Admin extends CI_Controller{
             'kode_barang'  => $kode_barang,
             'nama_barang'  => $nama_barang,
             'satuan'       => $satuan,
-            'jumlah'       => $jumlah,
-            'gambar'       => $gambar
+            'jumlah'       => $jumlah
       );
       $this->M_admin->insert('tb_barang_masuk',$data);
 

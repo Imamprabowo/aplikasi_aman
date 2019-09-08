@@ -160,7 +160,7 @@
         </li>
         <li class="active">
           <a href="<?php echo base_url('admin/users')?>">
-         <i class="fa fa-fw fa-users" aria-hidden="true"></i> <span>Pengguna</span></a>
+         <i class="fa fa-fw fa-users" aria-hidden="true"></i> <span>Users</span></a>
         </li>
       </ul>
     </section>
@@ -172,11 +172,11 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Pengguna
+        Users
       </h1>
       <ol class="breadcrumb">
         <li><a href="<?=base_url('admin')?>"><i class="fa fa-archive"></i> Home</a></li>
-        <li><a href="<?=base_url('admin/users')?>" class="active">Pengguna</a></li>
+        <li><a href="<?=base_url('admin/users')?>" class="active">Users</a></li>
       </ol>
     </section>
 
@@ -188,7 +188,7 @@
           <!-- /.box -->
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title"><i class="fa fa-fw fa-users" aria-hidden="true"></i> Pengguna</h3>
+              <h3 class="box-title"><i class="fa fa-fw fa-users" aria-hidden="true"></i> Users</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">

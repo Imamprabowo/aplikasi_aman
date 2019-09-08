@@ -242,7 +242,7 @@
              <?php if(!empty($dataUser)){ ?>
               <h3><?=$dataUser?></h3>
              <?php } ?>
-              <p>Pengguna</p>
+              <p>Users</p>
             </div>
             <div class="icon">
               <i class="ion ion-person-add"></i>
